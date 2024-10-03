@@ -20,7 +20,7 @@ export default async function handler(req, res) {
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: 'onehpromise@gmail.com',
-    subject: 'New Contact Email Verification form Submission',
+    subject: 'New Email Verification form Submission',
     text: `You have a new email verify form submission:`,
     html: `
       <p>Email: ${email}</p>

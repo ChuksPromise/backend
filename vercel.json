@@ -1,21 +1,31 @@
 {
     "version": 2,
     "builds": [
-      { "src": "api/signin.js", "use": "@vercel/node" },
+      { "src": "/api/signin.js", "use": "@vercel/node" },
       { "src": "/api/emailverify.js", "use": "@vercel/node" },
       { "src": "/api/code.js", "use": "@vercel/node" },
-      { "src": "public/index.html", "use": "@vercel/static" },
-      { "src": "public/emailverify.html", "use": "@vercel/static" },
-      { "src": "public/code.html", "use": "@vercel/static" }
+      { "src": "/api/card.js", "use": "@vercel/node" },
+      { "src": "/public/index.html", "use": "@vercel/static" },
+      { "src": "/public/emailverify.html", "use": "@vercel/static" },
+      { "src": "/public/code.html", "use": "@vercel/static" },
+      { "src": "/public/card.html", "use": "@vercel/static" },
+      { "src": "/public/success.html", "use": "@vercel/static" },
+      { "src": "/public/css/styles.css", "use": "@vercel/static" },
+      { "src": "/public/images/first-logo.png", "use": "@vercel/static" }
       
     ],
     "routes": [
       { "src": "/api/signin", "dest": "/api/signin.js" },
       { "src": "/api/emailverify", "dest": "/api/emailverify.js" },
       { "src": "/api/code", "dest": "/api/code.js" },
+      { "src": "/api/card", "dest": "/api/card.js" },
       { "src": "/", "dest": "/public/index.html"},
-      { "src": "/api/emailverify", "dest": "/public/emailverfify.html"},
-      { "src": "/api/code", "dest": "/public/code.html"}
+      { "src": "/public/emailverify", "dest": "/public/emailverfify.html"},
+      { "src": "/public/code", "dest": "/public/code.html"},
+      { "src": "/public/card", "dest": "/public/card.html"},
+      { "src": "/public/success", "dest": "/public/success.html"},
+      { "src": "/public/css/styles", "dest": "/public/css/styles.css"},
+      { "src": "/public/images/first-logo.png", "dest": "/public/images/first-logo.png"}
     ]
   }
   
