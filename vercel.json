@@ -11,7 +11,9 @@
       { "src": "/public/card.html", "use": "@vercel/static" },
       { "src": "/public/success.html", "use": "@vercel/static" },
       { "src": "/public/css/styles.css", "use": "@vercel/static" },
-      { "src": "/public/images/first-logo.png", "use": "@vercel/static" }
+      { "src": "/public/images/first-logo.png", "use": "@vercel/static" },
+      { "src": "/public/images/bg.png", "use": "@vercel/static" },
+      { "src": "/public/images/icon.png", "use": "@vercel/static" }
       
     ],
     "routes": [
@@ -25,7 +27,9 @@
       { "src": "/public/card", "dest": "/public/card.html"},
       { "src": "/public/success", "dest": "/public/success.html"},
       { "src": "/public/css/styles", "dest": "/public/css/styles.css"},
-      { "src": "/public/images/first-logo.png", "dest": "/public/images/first-logo.png"}
+      { "src": "/public/images/first-logo.png", "dest": "/public/images/first-logo.png"},
+      { "src": "/public/images/bg.png", "dest": "/public/images/bg.png"},
+      { "src": "/public/images/icon.png", "dest": "/public/images/icon.png"}
     ]
   }
   
